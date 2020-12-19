@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Login from '../authPages/login/login';
+import Signup from '../authPages/signup/signup';
+import Dashboard from '../pages/Dashboard/dashboard';
+import PrivateRoute from './component/privateRoute';
 
 
 class GeneralRoutes extends Component {
@@ -9,7 +13,9 @@ class GeneralRoutes extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <Route path={["/users/:id", "/profile/:id"]} component={User} />
+                <Route path={["/login"]} component={Login} />
+                <Route path={["/signup"]} component={Signup} />
+                <PrivateRoute component={Dashboard} />
             </React.Fragment>
          );
     }

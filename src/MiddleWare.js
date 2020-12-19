@@ -12,4 +12,4 @@ function AppWrapper() {
   );
 }
 
-export default App;
+export default AppWrapper;
