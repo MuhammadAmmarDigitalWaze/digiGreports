@@ -14,9 +14,9 @@ class GeneralRoutes extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <Route path={["/login"]} component={Login} />
+                <Route exact path="/login" component={Login} />
                 <Route path={["/signup"]} component={Signup} />
-                <PrivateRoute component={Dashboard} />
+                <PrivateRoute path="/dashboard" component={Dashboard} />
             </React.Fragment>
          );
     }
