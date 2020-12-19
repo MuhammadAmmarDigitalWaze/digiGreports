@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import Login from '../authPages/login/login';
 import Signup from '../authPages/signup/signup';
 import Dashboard from '../pages/Dashboard/dashboard';
