@@ -1,0 +1,27 @@
+.loader-wrapper
+{
+    z-index: 100;
+    width:0px;
+    height:0px;
+    border-radius:100%;
+    transition: 0.5s all ease;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:rgb(0, 0, 0,0);
+}
+
+.loader-true
+{
+    width: 150vw;
+    height: 150vh;
+    background:rgb(0, 128, 117);
+}
+
+.loader-false
+{
+    width: 0vw;
+    height: 0vh;
+    background:rgb(0, 0, 0);
+}
